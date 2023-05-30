@@ -1,0 +1,37 @@
+.app-bar {
+    background-color: #fff;
+    color: #212529;
+    font-size: 14px;
+   
+   
+}
+.app-bar img {
+    margin-left: -60px;
+}
+.menu-header {
+    margin-left: 20px;
+}
+.menu-header-btn {
+       display: flex;
+       list-style-type: none;
+
+       
+}
+.menu-header button {
+       text-transform: none;
+       font-weight: 600;
+       font-family: 'Livvic', sans-serif;
+    
+}
+.menu-header-btn li:hover  {
+       color: #ff7802;
+} 
+.header-menu-shop {
+    display: flex;
+  
+}
+.header-menu-shop li {
+    list-style-type: none;
+    margin-right: 35px;
+    display: flex;
+}
