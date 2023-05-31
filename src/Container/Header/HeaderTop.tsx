@@ -15,8 +15,8 @@ type Props = {}
 const HeaderTop = (props: Props) => {
     return (
         <AppBar position="static" className="app-bar-top">
-            <Container>
-                <Toolbar>
+            <Container className="header-padding">
+                <Toolbar className="header-top-height">
                     <div className="header-first">
                         <div className="header-top">
                             <ul className="header-top-menu">

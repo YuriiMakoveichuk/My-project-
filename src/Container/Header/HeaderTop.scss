@@ -1,6 +1,16 @@
 .app-bar-top {
     background-color: #76A713;
 }
+.header-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-top-height {
+    height: 76px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
 .header-first {
     width: 100%;
     display: flex;
@@ -9,12 +19,14 @@
     font-weight: 600;
     font-family: nunito sans,sans-serif;
     font-size: 14px;
-   margin-left: -72px;
+
    
 }
+
 .header-top-menu {
     display: flex;
-margin-left: -30px;
+    padding-left: 0;
+    margin-left: 15px;
    
 }
 .header-first  li {
@@ -30,7 +42,7 @@ margin-left: -30px;
 }
 .header-top-icons {
     display: flex;
-    margin-right: -140px;
+   
   
 }
 .header-top-icons a {

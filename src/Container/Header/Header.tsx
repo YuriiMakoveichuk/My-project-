@@ -17,8 +17,8 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <AppBar position="sticky" className="app-bar">
-            <Container>
-                <Toolbar>
+            <Container className="header-padding">
+                <Toolbar className="header-height">
                     <Logo />
                     <Menu />
                     <div>
@@ -35,12 +35,21 @@ const Header = (props: Props) => {
                         </ul>
                     </div>
 
-                    <Button variant="contained">
+                    <Button variant="contained" className="header-btn">
                         Consultations
                         <KeyboardDoubleArrowRightSharpIcon></KeyboardDoubleArrowRightSharpIcon>
                     </Button>
-
-                    <MenuIcon />
+                    <div className="header-buy-point">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
                 </Toolbar>
             </Container>
         </AppBar>
