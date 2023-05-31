@@ -1,8 +1,6 @@
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Button from '@mui/material/Button'
-import IconButton from '@mui/material/IconButton'
-import MenuIcon from '@mui/icons-material/Menu'
 import { Container } from '@mui/material'
 import SearchSharpIcon from '@mui/icons-material/SearchSharp'
 import ShoppingBasketSharpIcon from '@mui/icons-material/ShoppingBasketSharp'
