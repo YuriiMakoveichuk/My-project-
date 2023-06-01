@@ -18,7 +18,7 @@ const ArticleList = (props: Props) => {
                     Latest News & Blog
                 </Typography>
                 <Grid container spacing={4}>
-                    {/* <Grid item md={4}>
+                    <Grid item md={4}>
                         <ArticleListItem title={post19} />
                     </Grid>
                     <Grid item md={4}>
@@ -26,12 +26,12 @@ const ArticleList = (props: Props) => {
                     </Grid>
                     <Grid item md={4}>
                         <ArticleListItem title={post20} />
-                    </Grid> */}
-                    {articlesArray.map((article) => (
+                    </Grid>
+                    {/* {articlesArray.map((article) => (
                         <Grid item md={4}>
                             <ArticleListItem title={props.title} />
                         </Grid>
-                    ))}
+                    ))} */}
                 </Grid>
             </Container>
         </>
