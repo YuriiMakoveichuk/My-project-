@@ -1,0 +1,134 @@
+.app-bar {
+    background-color: #fff;
+    color: #1d213e;
+    font-size: 16px;
+}
+.header-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-height {
+    height: 102px;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header-btn {
+       display: flex;
+       list-style-type: none;  
+
+}
+.menu-header button {
+       text-transform: none;
+       font-weight: 600;
+       font-family: 'Livvic', sans-serif;
+    
+}
+.menu-header-btn li:hover  {
+       color: #ff7802;
+} 
+.menu-header-btn a {
+    color: #1d213e;
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Livvic', sans-serif;
+}
+
+.home-menu {
+    position: relative;
+}
+.pages-menu {
+    position: relative;
+}
+.portfolio-menu {
+    position: relative;
+}
+.blog-menu {
+    position: relative;
+}
+.shop-menu {
+    position: relative;
+}
+
+.header-home-menu {
+   
+    width: 190px;
+    position: absolute;
+    text-align: left;
+    background-color: white;
+    display: none;
+   
+}
+.header-home-menu li {
+   list-style-type: none;
+   line-height: 36px;
+}
+.header-home-menu li  {
+    color: #1d213e;
+}
+.menu-header-btn-text:hover .header-home-menu {
+    display: block;
+}
+.pages-header-btn-text:hover .header-home-menu {
+    display: block;
+}
+.portfolio-header-btn-text:hover .header-home-menu {
+    display: block;
+}
+.blog-header-btn-text:hover .header-home-menu {
+    display: block;
+}
+.shop-header-btn-text:hover .header-home-menu {
+    display: block;
+}
+.header-home-menu li :hover {
+    color: #ff7802;
+}
+
+
+.header-menu-shop {
+    display: flex;
+    margin-left: 50px;
+  
+}
+.header-menu-shop li {
+    list-style-type: none;
+    margin-right: 35px;
+    display: flex;
+  
+
+}
+.header-btn  {
+    width: 158px;
+    height: 57px;
+    text-transform: none;
+    background-color: #FF7800;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Livvic", Sans-serif;
+    display: flex;   
+}
+.header-btn:hover {
+    background-color: #76A713;
+}
+.header-buy-point {
+    margin-left: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+    padding-right: 0;
+    
+  
+}
+.header-buy-point i {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px; 
+    border-radius: 50%;
+    background-color: #1d213e;
+}
