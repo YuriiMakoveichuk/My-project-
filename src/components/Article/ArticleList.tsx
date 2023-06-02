@@ -1,7 +1,4 @@
 import { Container, Grid, Typography } from '@mui/material'
-import post19 from 'assets/post19.jpg'
-import post10 from 'assets/post10.jpg'
-import post20 from 'assets/post20.jpg'
 import ArticleListItem from './ArticleListItem'
 import articlesArray from 'utils/articlesArray'
 
@@ -18,20 +15,15 @@ const ArticleList = (props: Props) => {
                     Latest News & Blog
                 </Typography>
                 <Grid container spacing={4}>
-                    <Grid item md={4}>
-                        <ArticleListItem title={post19} />
-                    </Grid>
-                    <Grid item md={4}>
-                        <ArticleListItem title={post10} />
-                    </Grid>
-                    <Grid item md={4}>
-                        <ArticleListItem title={post20} />
-                    </Grid>
-                    {/* {articlesArray.map((article) => (
+                    {articlesArray.map(({ title, type, text }) => (
                         <Grid item md={4}>
-                            <ArticleListItem title={props.title} />
+                            <ArticleListItem
+                                title={title}
+                                type={type}
+                                text={text}
+                            />
                         </Grid>
-                    ))} */}
+                    ))}
                 </Grid>
             </Container>
         </>

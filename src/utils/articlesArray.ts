@@ -1,30 +1,39 @@
-import post19 from 'assets/post19.jpg'
-import post10 from 'assets/post10.jpg'
-import post20 from 'assets/post20.jpg'
-  
-  
-  type Article = {
+type Article = {
     title: string
     type: string
     text: string
 }
 
-const articlesArray: Article[]
-= [
+const articlesArray: Article[] = [
     {
-        title: post19,
-        type: "Vegetable",
-        text: "Unicode UTF8 Character Sets They Sltimate Guide Systems"
+        title: '/images/post19.jpg',
+        type: 'Vegetable',
+        text: 'Unicode UTF8 Character Sets They Sltimate Guide Systems',
     },
     {
-        title: post10,
-        type: "Vegetable",
-        text: "Unicode UTF8 Character Sets They Sltimate Guide Systems"
+        title: '/images/post10.jpg',
+        type: 'Farming',
+        text: 'Quality Foods Requirments For Every Human Body’s',
     },
     {
-        title: post20,
-        type: "Vegetable",
-        text: "Unicode UTF8 Character Sets They Sltimate Guide Systems"
-    }
+        title: '/images/post20.jpg',
+        type: 'Organic Fruits',
+        text: 'Choose Awesome Vegetables For Your Daily Life Routine',
+    },
+    {
+        title: '/images/post18.jpg',
+        type: 'Vegetable',
+        text: 'Unicode UTF8 Character Sets They Sltimate Guide Systems',
+    },
+    {
+        title: '/images/post17.jpg',
+        type: 'Farming',
+        text: 'Quality Foods Requirments For Every Human Body’s',
+    },
+    {
+        title: '/images/post16.jpg',
+        type: 'Organic Fruits',
+        text: 'Choose Awesome Vegetables For Your Daily Life Routine',
+    },
 ]
- export default articlesArray
+export default articlesArray
