@@ -39,6 +39,13 @@ const Header = (props: Props) => {
                         Consultations
                         <KeyboardDoubleArrowRightSharpIcon></KeyboardDoubleArrowRightSharpIcon>
                     </Button>
+                    <div className="header-buy-min">
+                        <div className="header-buy-point-min">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <div className="header-buy-point">
                         <i></i>
                         <i></i>
