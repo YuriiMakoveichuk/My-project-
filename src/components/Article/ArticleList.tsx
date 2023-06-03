@@ -16,7 +16,7 @@ const ArticleList = (props: Props) => {
                 </Typography>
                 <Grid container spacing={4}>
                     {articlesArray.map(({ title, type, text }) => (
-                        <Grid item md={4}>
+                        <Grid item md={4} sm={6} xs={12}>
                             <ArticleListItem
                                 title={title}
                                 type={type}
