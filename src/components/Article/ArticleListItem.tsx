@@ -8,20 +8,22 @@ import './ArticleListItem.scss'
 
 type Props = {
     title: string
+    type: string
+    text: string
 }
 
-const ArticleListItem = (props: Props) => {
+const ArticleListItem = ({ title, type, text }: Props) => {
     return (
         <Card sx={{ maxWidth: 390 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
                     height="240"
-                    src={props.title}
+                    src={title}
                     alt="Fake-shop logo"
                 />
                 <CardContent>
-                    <Typography className="article-text">Vegetable</Typography>
+                    <Typography className="article-text">{type}</Typography>
 
                     <Typography
                         gutterBottom
@@ -29,7 +31,7 @@ const ArticleListItem = (props: Props) => {
                         component="div"
                         className="article-title"
                     >
-                        Unicode UTF8 Character Sets They Sltimate Guide Systems
+                        {text}
                     </Typography>
                 </CardContent>
             </CardActionArea>
