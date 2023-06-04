@@ -3,132 +3,159 @@
     color: #1d213e;
     font-size: 16px;
 }
-.header-padding{
+.header-padding {
+    width: 100%;
     padding-left: 0;
     padding-right: 0;
 }
-
 .header-height {
     height: 102px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .menu-header-btn {
-       display: flex;
-       list-style-type: none;  
-
-}
-.menu-header button {
-       text-transform: none;
-       font-weight: 600;
-       font-family: 'Livvic', sans-serif;
-    
-}
-.menu-header-btn li:hover  {
-       color: #ff7802;
-} 
-.menu-header-btn a {
-    color: #1d213e;
-    font-size: 14px;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Livvic', sans-serif;
-}
-
-.home-menu {
-    position: relative;
-}
-.pages-menu {
-    position: relative;
-}
-.portfolio-menu {
-    position: relative;
-}
-.blog-menu {
-    position: relative;
-}
-.shop-menu {
-    position: relative;
-}
-
-.header-home-menu {
-   
-    width: 190px;
-    position: absolute;
-    text-align: left;
-    background-color: white;
     display: none;
-   
 }
-.header-home-menu li {
-   list-style-type: none;
-   line-height: 36px;
-}
-.header-home-menu li  {
-    color: #1d213e;
-}
-.menu-header-btn-text:hover .header-home-menu {
-    display: block;
-}
-.pages-header-btn-text:hover .header-home-menu {
-    display: block;
-}
-.portfolio-header-btn-text:hover .header-home-menu {
-    display: block;
-}
-.blog-header-btn-text:hover .header-home-menu {
-    display: block;
-}
-.shop-header-btn-text:hover .header-home-menu {
-    display: block;
-}
-.header-home-menu li :hover {
-    color: #ff7802;
-}
-
-
 .header-menu-shop {
+    display: none;
+}
+.header-btn {
+    display: none;
+}
+.header-buy-min {
+    width: 80%;
     display: flex;
-    margin-left: 50px;
-  
+    justify-content: end;
 }
-.header-menu-shop li {
-    list-style-type: none;
-    margin-right: 35px;
-    display: flex;
-  
-
-}
-.header-btn  {
-    width: 158px;
-    height: 57px;
-    text-transform: none;
-    background-color: #FF7800;
-    font-weight: 700;
-    font-size: 16px;
-    font-family: "Livvic", Sans-serif;
-    display: flex;   
-}
-.header-btn:hover {
-    background-color: #76A713;
-}
-.header-buy-point {
-    margin-left: 40px;
-    width: 30px;
-    height: 30px;
-    line-height: 10px;
+.header-buy-point-min {
+    background-color: #fff;
+    width: 38px;
+    height: 34px;
+    border: 1px solid #1d213e;
+    border-radius: 5px;
+    display: block;
     padding-right: 0;
-    
-  
 }
-.header-buy-point i {
-    display: inline-block;
-    width: 5px;
-    height: 5px;
-    margin-left: 5px; 
-    border-radius: 50%;
-    background-color: #1d213e;
+.header-buy-point-min span {
+    display: flex;
+    border: 1px solid #1d213e;
+    margin: 6.5px 5px;
+}
+
+@media (min-width: 1200px) {
+    .menu-header-btn {
+        display: flex;
+        list-style-type: none;
+    }
+    .menu-header button {
+        text-transform: none;
+        font-weight: 600;
+        font-family: 'Livvic', sans-serif;
+    }
+    .menu-header-btn li:hover {
+        color: #ff7802;
+    }
+    .menu-header-btn a {
+        color: #1d213e;
+        font-size: 14px;
+        list-style-type: none;
+        text-decoration: none;
+        font-family: 'Livvic', sans-serif;
+    }
+
+    .home-menu {
+        position: relative;
+    }
+    .pages-menu {
+        position: relative;
+    }
+    .portfolio-menu {
+        position: relative;
+    }
+    .blog-menu {
+        position: relative;
+    }
+    .shop-menu {
+        position: relative;
+    }
+
+    .header-home-menu {
+        width: 190px;
+        position: absolute;
+        text-align: left;
+        background-color: white;
+        display: none;
+    }
+    .header-home-menu li {
+        list-style-type: none;
+        line-height: 36px;
+    }
+    .header-home-menu li {
+        color: #1d213e;
+    }
+    .menu-header-btn-text:hover .header-home-menu {
+        display: block;
+    }
+    .pages-header-btn-text:hover .header-home-menu {
+        display: block;
+    }
+    .portfolio-header-btn-text:hover .header-home-menu {
+        display: block;
+    }
+    .blog-header-btn-text:hover .header-home-menu {
+        display: block;
+    }
+    .shop-header-btn-text:hover .header-home-menu {
+        display: block;
+    }
+    .header-home-menu li :hover {
+        color: #ff7802;
+    }
+
+    .header-menu-shop {
+        display: flex;
+        margin-left: 50px;
+    }
+    .header-menu-shop li {
+        list-style-type: none;
+        margin-right: 35px;
+        display: flex;
+    }
+    .header-btn {
+        width: 158px;
+        height: 57px;
+        text-transform: none;
+        background-color: #ff7800;
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Livvic', Sans-serif;
+        display: flex;
+    }
+    .header-btn:hover {
+        background-color: #76a713;
+    }
+    .header-buy-min {
+        display: none;
+    }
+    .header-buy-point-min {
+        display: none;
+    }
+    .header-buy-point {
+        margin-left: 40px;
+        width: 30px;
+        height: 30px;
+        line-height: 10px;
+        padding-right: 0;
+    }
+    .header-buy-point i {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-left: 5px;
+        border-radius: 50%;
+        background-color: #1d213e;
+    }
 }
