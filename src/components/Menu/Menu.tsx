@@ -73,17 +73,17 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Portfolio Grid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Portfolio Fluid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Portfolio Details</span>
                             </a>
                         </li>
@@ -95,17 +95,17 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Blog Gird</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Blog Standart</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Blog Detials</span>
                             </a>
                         </li>
@@ -117,32 +117,32 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Shop Grid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Our Shop</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Cart</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Wishlist</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span> - Checkout</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="#">
                                 <span>- Product Details</span>
                             </a>
                         </li>
