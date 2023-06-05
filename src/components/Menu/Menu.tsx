@@ -13,17 +13,17 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - Home 1</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - Home 2</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - Home 3</span>
                             </a>
                         </li>
@@ -35,32 +35,32 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - About Us</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - Our Services</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span>- Service Details</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - FAQs</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - Farmers</span>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="foo">
                                 <span> - 404Error</span>
                             </a>
                         </li>
@@ -73,17 +73,17 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Portfolio Grid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Portfolio Fluid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Portfolio Details</span>
                             </a>
                         </li>
@@ -95,17 +95,17 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Blog Gird</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Blog Standart</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Blog Detials</span>
                             </a>
                         </li>
@@ -117,32 +117,32 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Shop Grid</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Our Shop</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Cart</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Wishlist</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span> - Checkout</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="foo">
                                 <span>- Product Details</span>
                             </a>
                         </li>
