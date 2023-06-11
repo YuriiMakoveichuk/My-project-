@@ -15,14 +15,15 @@ type Props = {
 const ArticleListItem = ({ title, type, text }: Props) => {
     return (
         <Card sx={{ maxWidth: 390 }}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    height="240"
-                    src={title}
-                    alt="Fake-shop logo"
-                />
-                <CardContent>
+            <CardMedia
+                component="img"
+                height="240"
+                src={title}
+                alt="Fake-shop logo"
+            />
+
+            <CardContent>
+                <CardActionArea className="article-menu">
                     <Typography className="article-text">{type}</Typography>
 
                     <Typography
@@ -33,14 +34,15 @@ const ArticleListItem = ({ title, type, text }: Props) => {
                     >
                         {text}
                     </Typography>
-                </CardContent>
-            </CardActionArea>
-            <CardActions>
-                <Button className="article-btn">
-                    Read more
-                    <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon>
-                </Button>
-            </CardActions>
+
+                    <CardActions>
+                        <Button className="article-btn">
+                            Read more
+                            <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon>
+                        </Button>
+                    </CardActions>
+                </CardActionArea>
+            </CardContent>
         </Card>
     )
 }

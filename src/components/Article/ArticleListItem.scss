@@ -3,14 +3,14 @@
     color: #ff7802;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
-    margin:  26px 0;
+    margin: 26px 0;
 }
 .article-header-text {
     font-size: 40px;
     text-align: center;
     font-weight: 600;
     color: #1d213e;
-    font-family: nunito sans,sans-serif;
+    font-family: nunito sans, sans-serif;
     margin-bottom: 30px;
 }
 .article-text {
@@ -22,21 +22,22 @@
 .article-title {
     font-size: 22px;
     font-weight: 600;
-    font-family: livvic,sans-serif;
+    font-family: livvic, sans-serif;
     color: #1d213e;
     line-height: 30px;
     margin-top: 20px;
 }
-.article-title:hover {
-text-decoration: underline;
+
+.article-menu:hover .article-title {
+    text-decoration: underline;
 }
 .article-btn {
     color: #666;
     font-size: 16px;
-    font-family: livvic,sans-serif;
+    font-family: livvic, sans-serif;
     font-weight: 600;
-    text-transform: none;  
+    text-transform: none;
 }
-.article-btn:hover {
-   color: #76A713;
+.article-menu:hover .article-btn {
+    color: #76a713;
 }
