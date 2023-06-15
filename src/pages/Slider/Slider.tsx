@@ -13,6 +13,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import Button from '@mui/material/Button'
 import Rating from '@mui/material/Rating'
+import SliderList from './SliderList'
 
 type Props = {}
 
@@ -36,6 +37,39 @@ const Slider = (props: Props) => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+
+                    {/* <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -87,6 +121,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -138,6 +173,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -240,6 +276,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -291,6 +328,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -342,6 +380,8 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        {' '}
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -393,6 +433,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -444,6 +485,7 @@ const Slider = (props: Props) => {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <SliderList />
                         <Card className="swiper-card">
                             <CardActionArea>
                                 <div className="swiper-icons">
@@ -492,7 +534,7 @@ const Slider = (props: Props) => {
                                 </CardContent>
                             </CardActionArea>
                         </Card>
-                    </SwiperSlide>
+                    </SwiperSlide> */}
                 </Swiper>
             </Container>
         </>

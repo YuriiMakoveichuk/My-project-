@@ -1,5 +1,7 @@
 import Button from '@mui/material/Button'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
+import { NavLink } from 'react-router-dom'
+import './Menu.scss'
 
 type Props = {}
 
@@ -9,7 +11,15 @@ const Menu = (props: Props) => {
             <ul className="menu-header-btn">
                 <li className="menu-header-btn-text">
                     <Button color="inherit" className="home-menu">
-                        Home <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        <NavLink
+                            to={'/'}
+                            className={({ isActive }) =>
+                                isActive ? 'menu-item-active' : 'menu-item'
+                            }
+                        >
+                            Home
+                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        </NavLink>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
@@ -31,7 +41,15 @@ const Menu = (props: Props) => {
                 </li>
                 <li className="pages-header-btn-text">
                     <Button color="inherit" className="pages-menu">
-                        Pages <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        <NavLink
+                            to={'/pages'}
+                            className={({ isActive }) =>
+                                isActive ? 'menu-item-active' : 'menu-item'
+                            }
+                        >
+                            Pages{' '}
+                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        </NavLink>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
@@ -68,8 +86,10 @@ const Menu = (props: Props) => {
                 </li>
                 <li className="portfolio-header-btn-text">
                     <Button color="inherit" className="portfolio-menu">
-                        Portfolio
-                        <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        <NavLink to={'/portfolio'}>
+                            Portfolio
+                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        </NavLink>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
@@ -91,7 +111,10 @@ const Menu = (props: Props) => {
                 </li>
                 <li className="blog-header-btn-text">
                     <Button color="inherit" className="blog-menu">
-                        Blog <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        <NavLink to={'/blog'}>
+                            Blog
+                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        </NavLink>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
@@ -113,7 +136,10 @@ const Menu = (props: Props) => {
                 </li>
                 <li className="shop-header-btn-text">
                     <Button color="inherit" className="shop-menu">
-                        Shop <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        <NavLink to={'/shop'}>
+                            Shop
+                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                        </NavLink>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
@@ -149,7 +175,9 @@ const Menu = (props: Props) => {
                     </ul>
                 </li>
                 <li>
-                    <Button color="inherit">Contact</Button>
+                    <Button color="inherit">
+                        <NavLink to={'/contact'}> Contact</NavLink>
+                    </Button>
                 </li>
             </ul>
         </div>
