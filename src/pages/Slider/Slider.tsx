@@ -4,15 +4,9 @@ import 'swiper/css/pagination'
 import { Pagination } from 'swiper'
 import './Slider.scss'
 import { Container } from '@mui/material'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
+
 import Typography from '@mui/material/Typography'
-import { CardActionArea } from '@mui/material'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import VisibilityIcon from '@mui/icons-material/Visibility'
-import Button from '@mui/material/Button'
-import Rating from '@mui/material/Rating'
+
 import SliderList from './SliderList'
 
 type Props = {}
