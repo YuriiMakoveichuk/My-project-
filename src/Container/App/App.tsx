@@ -1,6 +1,7 @@
 import { Container } from '@mui/material'
 import CssBaseline from '@mui/material/CssBaseline'
 import { StyledEngineProvider } from '@mui/material/styles'
+import Footer from 'Container/Footer/Footer'
 import Header from 'Container/Header/Header'
 import HeaderTop from 'Container/Header/HeaderTop'
 import ContactPage from 'pages/Contact/ContactPage'
@@ -24,6 +25,7 @@ const App = (props: Props) => {
                         <Route path="/contact" element={<ContactPage />} />
                     </Routes>
                 </Container>
+                <Footer />
             </StyledEngineProvider>
         </>
     )

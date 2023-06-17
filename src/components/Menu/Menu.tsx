@@ -18,10 +18,10 @@ const Menu = (props: Props) => {
                             }
                         >
                             Home
-                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                            {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>
                     </Button>
-                    <ul className="header-home-menu">
+                    {/* <ul className="header-home-menu">
                         <li>
                             <a href="foo">
                                 <span> - Home 1</span>
@@ -37,7 +37,7 @@ const Menu = (props: Props) => {
                                 <span> - Home 3</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="pages-header-btn-text">
                     <Button color="inherit" className="pages-menu">
@@ -48,10 +48,10 @@ const Menu = (props: Props) => {
                             }
                         >
                             Pages{' '}
-                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                            {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>
                     </Button>
-                    <ul className="header-home-menu">
+                    {/* <ul className="header-home-menu">
                         <li>
                             <a href="foo">
                                 <span> - About Us</span>
@@ -82,16 +82,16 @@ const Menu = (props: Props) => {
                                 <span> - 404Error</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="portfolio-header-btn-text">
                     <Button color="inherit" className="portfolio-menu">
                         <NavLink to={'/portfolio'}>
                             Portfolio
-                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                            {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>
                     </Button>
-                    <ul className="header-home-menu">
+                    {/* <ul className="header-home-menu">
                         <li>
                             <a href="foo">
                                 <span>- Portfolio Grid</span>
@@ -107,16 +107,16 @@ const Menu = (props: Props) => {
                                 <span>- Portfolio Details</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="blog-header-btn-text">
                     <Button color="inherit" className="blog-menu">
                         <NavLink to={'/blog'}>
                             Blog
-                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
+                            {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>
                     </Button>
-                    <ul className="header-home-menu">
+                    {/* <ul className="header-home-menu">
                         <li>
                             <a href="foo">
                                 <span> - Blog Gird</span>
@@ -132,32 +132,31 @@ const Menu = (props: Props) => {
                                 <span> - Blog Detials</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </li>
                 <li className="shop-header-btn-text">
                     <Button color="inherit" className="shop-menu">
-                        <NavLink to={'/shop'}>
-                            Shop
-                            <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
-                        </NavLink>
+                        <NavLink to={'/shop'}>Shop</NavLink>
+
+                        <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
                     </Button>
                     <ul className="header-home-menu">
                         <li>
                             <a href="foo">
-                                <span> - Shop Grid</span>
+                                <span> - Fruits</span>
                             </a>
                         </li>
                         <li>
                             <a href="foo">
-                                <span> - Our Shop</span>
+                                <span> - Vegetables</span>
                             </a>
                         </li>
                         <li>
                             <a href="foo">
-                                <span>- Cart</span>
+                                <span>- Other</span>
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="foo">
                                 <span> - Wishlist</span>
                             </a>
@@ -171,7 +170,7 @@ const Menu = (props: Props) => {
                             <a href="foo">
                                 <span>- Product Details</span>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
                 </li>
                 <li>
