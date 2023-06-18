@@ -7,6 +7,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import VisibilityIcon from '@mui/icons-material/Visibility'
 import Button from '@mui/material/Button'
 import Rating from '@mui/material/Rating'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     title: string
@@ -28,8 +29,13 @@ const SliderListItem = ({ title, type, price }: Props) => {
                             fontSize="medium"
                             className=" swiper-like swiper-visibility"
                         ></VisibilityIcon>
-                        <Button className="swiper-btn" variant="contained">
+
+                        <Button
+                            className="swiper-btn swiper-margin-btn "
+                            variant="contained"
+                        >
                             Add to cart +
+                            <NavLink to={'/shop'}>Add to cart +</NavLink>
                         </Button>
                     </div>
                     <CardMedia

@@ -1,0 +1,25 @@
+.shop-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.shop-card {
+    text-align: center;
+}
+.shop-card-quantity {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px 20px;
+}
+.shop-card-quantity button {
+    border-color: #76a713;
+    color: #76a713;
+}
+.shop-card-quantity button:hover {
+    background-color: #ecf4ab;
+    border-color: #76a713;
+}
+
+.shop-card-quantity input {
+    text-align: center;
+    height: 20px;
+}

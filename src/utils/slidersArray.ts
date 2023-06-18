@@ -1,11 +1,11 @@
-type Slider = {
+type Product = {
     id: number
     title: string
     type: string
     price: number
 }
 
-const slidersArray: Slider[] = [
+const slidersArray: Product[] = [
     {
         id: 1,
         title: './images/broccoli.png',

@@ -142,19 +142,21 @@ const Menu = (props: Props) => {
                     </Button>
                     <ul className="header-home-menu">
                         <li>
-                            <a href="foo">
-                                <span> - Fruits</span>
-                            </a>
+                            <Button>
+                                <NavLink to={'/shop'}> - Shop</NavLink>
+                            </Button>
                         </li>
                         <li>
-                            <a href="foo">
-                                <span> - Vegetables</span>
-                            </a>
+                            <Button>
+                                <NavLink to={'/shop_vegetables'}>
+                                    - Vegetables
+                                </NavLink>
+                            </Button>
                         </li>
                         <li>
-                            <a href="foo">
-                                <span>- Other</span>
-                            </a>
+                            <Button>
+                                <NavLink to={'/shop_fruits'}>- Fruits</NavLink>
+                            </Button>
                         </li>
                         {/* <li>
                             <a href="foo">
@@ -175,7 +177,7 @@ const Menu = (props: Props) => {
                 </li>
                 <li>
                     <Button color="inherit">
-                        <NavLink to={'/contact'}> Contact</NavLink>
+                        <NavLink to={'/contact'}> Cart</NavLink>
                     </Button>
                 </li>
             </ul>
