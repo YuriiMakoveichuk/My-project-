@@ -1,14 +1,23 @@
 import slidersArray from 'utils/slidersArray'
 import SliderListItem from './SliderListItem'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 type Props = {}
 
 const SliderList = (props: Props) => {
     return (
         <>
-            {slidersArray.map(({ title, type, price }) => (
-                <SliderListItem title={title} type={type} price={price} />
-            ))}
+            <SwiperSlide>
+                {slidersArray.map(({ title, type, price }) => (
+                    <SwiperSlide>
+                        <SliderListItem
+                            title={title}
+                            type={type}
+                            price={price}
+                        />
+                    </SwiperSlide>
+                ))}
+            </SwiperSlide>
         </>
     )
 }

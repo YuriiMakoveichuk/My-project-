@@ -1,15 +1,17 @@
+import CartProductLict from 'components/CartProductList/CartProductLict'
+import CartTotal from 'components/CartTotal/CartTotal'
+
 type Props = {
-    cartData: {
-        totalCount: number
-        totalPrice: number
+    productsInCart: {
+        [id: number]: number
     }
 }
 
-const CartHeader = ({ cartData }: Props) => {
+const CartHeader = ({ productsInCart }: Props) => {
     return (
-        <div className="card">
-            <div>{cartData.totalCount}</div>
-            <div>$ {cartData.totalPrice}</div>
+        <div>
+            <CartProductLict productsInCart={productsInCart} />
+            <CartTotal productsInCart={productsInCart} />
         </div>
     )
 }

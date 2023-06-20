@@ -3,9 +3,11 @@ import ShopList from './ShopList'
 import { Container, Typography } from '@mui/material'
 import './Shop.scss'
 
-type Props = {}
+type Props = {
+    AddProductToCart: (id: number, count: number) => void
+}
 
-const Shop = (props: Props) => {
+const Shop = ({ AddProductToCart }: Props) => {
     return (
         <>
             <Banner />
@@ -19,7 +21,7 @@ const Shop = (props: Props) => {
                     </Typography>
                 </div>
             </Container>
-            <ShopList />
+            <ShopList AddProductToCart={AddProductToCart} />
         </>
     )
 }

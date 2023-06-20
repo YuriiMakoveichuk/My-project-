@@ -8,12 +8,14 @@ import { TextField } from '@mui/material'
 import { useState } from 'react'
 
 type Props = {
+    id: number
     title: string
     type: string
     price: number
+    AddProductToCart: (id: number, count: number) => void
 }
 
-const ShopListItem = ({ title, type, price }: Props) => {
+const ShopListItem = ({ id, title, type, price, AddProductToCart }: Props) => {
     const [count, setCount] = useState<number>(1)
 
     const onDecrementClick = () => {
@@ -67,7 +69,11 @@ const ShopListItem = ({ title, type, price }: Props) => {
                                 +
                             </Button>
                         </div>
-                        <Button className="swiper-btn" variant="contained">
+                        <Button
+                            className="swiper-btn"
+                            variant="contained"
+                            onClick={() => AddProductToCart(id, count)}
+                        >
                             Add to cart
                         </Button>
                     </CardContent>

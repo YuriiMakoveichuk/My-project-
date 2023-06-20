@@ -1,4 +1,4 @@
-type Product = {
+export type Product = {
     id: number
     title: string
     type: string
@@ -61,5 +61,14 @@ const slidersArray: Product[] = [
         price: 55.0,
     },
 ]
+
+export const getProductsObject = (array: Product[]) =>
+    array.reduce(
+        (object, product) => ({
+            ...object,
+            [product.id]: product,
+        }),
+        {}
+    )
 
 export default slidersArray

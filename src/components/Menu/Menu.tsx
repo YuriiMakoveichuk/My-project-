@@ -1,7 +1,6 @@
 import Button from '@mui/material/Button'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import { NavLink } from 'react-router-dom'
-import './Menu.scss'
 
 type Props = {}
 
@@ -11,12 +10,7 @@ const Menu = (props: Props) => {
             <ul className="menu-header-btn">
                 <li className="menu-header-btn-text">
                     <Button color="inherit" className="home-menu">
-                        <NavLink
-                            to={'/'}
-                            className={({ isActive }) =>
-                                isActive ? 'menu-item-active' : 'menu-item'
-                            }
-                        >
+                        <NavLink to={'/'}>
                             Home
                             {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>
@@ -41,12 +35,7 @@ const Menu = (props: Props) => {
                 </li>
                 <li className="pages-header-btn-text">
                     <Button color="inherit" className="pages-menu">
-                        <NavLink
-                            to={'/pages'}
-                            className={({ isActive }) =>
-                                isActive ? 'menu-item-active' : 'menu-item'
-                            }
-                        >
+                        <NavLink to={'/pages'}>
                             Pages{' '}
                             {/* <KeyboardArrowDownIcon></KeyboardArrowDownIcon> */}
                         </NavLink>

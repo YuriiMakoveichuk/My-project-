@@ -12,20 +12,19 @@ import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
 
 type Props = {
-    cartData: {
-        totalCount: number
-        totalPrice: number
+    productsInCart: {
+        [id: number]: number
     }
 }
 
-const Header = ({ cartData }: Props) => {
+const Header = ({ productsInCart }: Props) => {
     return (
         <AppBar position="sticky" className="app-bar">
             <Container className="header-padding">
                 <Toolbar className="header-height">
                     <Logo />
                     <Menu />
-                    <CartHeader cartData={cartData} />
+                    <CartHeader productsInCart={productsInCart} />
                     <div>
                         <ul className="header-menu-shop">
                             <li>

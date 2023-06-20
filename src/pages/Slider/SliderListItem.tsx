@@ -34,7 +34,6 @@ const SliderListItem = ({ title, type, price }: Props) => {
                             className="swiper-btn swiper-margin-btn "
                             variant="contained"
                         >
-                            Add to cart +
                             <NavLink to={'/shop'}>Add to cart +</NavLink>
                         </Button>
                     </div>
@@ -59,12 +58,11 @@ const SliderListItem = ({ title, type, price }: Props) => {
                             variant="body2"
                             color="text.secondary"
                         >
-                            {price}
+                            $ {price}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
             </Card>
-            t
         </>
     )
 }

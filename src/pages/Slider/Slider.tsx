@@ -30,22 +30,25 @@ const Slider = (props: Props) => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
+                    {/* <SwiperSlide> */}
+                    {/* <SliderList /> */}
+                    {/* </SwiperSlide> */}
+                    {/* <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>
+                     <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide> */}
                     <SwiperSlide>
+                        <SliderList />
+                    </SwiperSlide>{' '}
+                    {/* <SwiperSlide>
                         <SliderList />
                     </SwiperSlide>
 
                     <SwiperSlide>
                         <SliderList />
                     </SwiperSlide>
-
-                    <SwiperSlide>
-                        <SliderList />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <SliderList />
-                    </SwiperSlide>
-
                     <SwiperSlide>
                         <SliderList />
                     </SwiperSlide>
@@ -58,10 +61,6 @@ const Slider = (props: Props) => {
                     <SwiperSlide>
                         <SliderList />
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <SliderList />
-                    </SwiperSlide>
-
                     {/* <SwiperSlide>
                         <SliderList />
                         <Card className="swiper-card">

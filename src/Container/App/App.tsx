@@ -12,34 +12,45 @@ import Home from 'pages/Home/Home'
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-type CartData = {
-    totalCount: number
-    totalPrice: number
+type ProductsInCart = {
+    [id: number]: number
 }
 
 const App = () => {
-    const [cartData, setCartData] = useState<CartData>({
-        totalCount: 0,
-        totalPrice: 0,
+    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
+        1: 5,
+        2: 5,
     })
 
+    const AddProductToCart = (id: number, count: number) => {
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0) + count,
+        }))
+    }
     return (
         <>
             <StyledEngineProvider injectFirst>
                 <CssBaseline />
 
                 <HeaderTop />
-                <Header cartData={cartData} />
+                <Header productsInCart={productsInCart} />
 
                 <Container>
                     <Routes>
                         <Route path="/" element={<Home />} />
-
-                        <Route path="/contact" element={<CardPage />} />
                     </Routes>
                 </Container>
                 <Routes>
-                    <Route path="/shop" element={<Shop />} />
+                    <Route
+                        path="/contact"
+                        element={<CardPage productsInCart={productsInCart} />}
+                    />
+
+                    <Route
+                        path="/shop"
+                        element={<Shop AddProductToCart={AddProductToCart} />}
+                    />
                     <Route path="/shop_fruits" element={<ShopFruits />} />
                     <Route
                         path="/shop_vegetables"
