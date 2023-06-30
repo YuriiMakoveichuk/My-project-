@@ -1,6 +1,6 @@
 import slidersArray, { Product, getProductsObject } from 'utils/slidersArray'
 import CartProductListItem from './CartProductListItem'
-import { Container, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 
 type Props = {
     productsInCart: {

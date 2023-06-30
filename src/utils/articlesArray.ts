@@ -1,5 +1,3 @@
-import { dividerClasses } from '@mui/material'
-
 export type Article = {
     id: number
     title: string

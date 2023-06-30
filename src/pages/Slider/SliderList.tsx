@@ -1,6 +1,6 @@
 import slidersArray from 'utils/slidersArray'
 import SliderListItem from './SliderListItem'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { SwiperSlide } from 'swiper/react'
 
 type Props = {}
 
