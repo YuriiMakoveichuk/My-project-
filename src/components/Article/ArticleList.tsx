@@ -21,6 +21,7 @@ const ArticleList = (props: Props) => {
                                 title={title}
                                 type={type}
                                 text={text}
+                                id={id}
                             />
                         </Grid>
                     ))}

@@ -3,6 +3,7 @@ export type Product = {
     title: string
     type: string
     price: number
+    category?: string
 }
 
 const slidersArray: Product[] = [
@@ -11,12 +12,14 @@ const slidersArray: Product[] = [
         title: './images/broccoli.png',
         type: 'Organic Broccoli',
         price: 18.0,
+        category: 'vegetables',
     },
     {
         id: 2,
         title: './images/strawberry.png',
         type: 'Fresh Carrots',
         price: 25.0,
+        category: 'fruits',
     },
     {
         id: 3,
@@ -29,36 +32,42 @@ const slidersArray: Product[] = [
         title: './images/orange.png',
         type: 'Organic orange',
         price: 55.0,
+        category: 'fruits',
     },
     {
         id: 5,
         title: './images/garnet.png',
         type: 'Fresh Organic',
         price: 83.5,
+        category: 'fruits',
     },
     {
         id: 6,
         title: './images/strawberry.png',
         type: 'Fresh Carrots',
         price: 25.0,
+        category: 'fruits',
     },
     {
         id: 7,
         title: './images/broccoli.png',
         type: 'Organic Broccoli',
         price: 18.0,
+        category: 'vegetables',
     },
     {
         id: 8,
         title: './images/garnet.png',
         type: 'Fresh Organic',
         price: 83.5,
+        category: 'fruits',
     },
     {
         id: 9,
         title: './images/orange.png',
         type: 'Organic orange',
         price: 55.0,
+        category: 'fruits',
     },
 ]
 

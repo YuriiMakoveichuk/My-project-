@@ -1,8 +1,11 @@
-type Article = {
+import { dividerClasses } from '@mui/material'
+
+export type Article = {
     id: number
     title: string
     type: string
     text: string
+    description?: string
 }
 
 const articlesArray: Article[] = [
@@ -11,6 +14,7 @@ const articlesArray: Article[] = [
         title: '/images/post19.jpg',
         type: 'Vegetable',
         text: 'Unicode UTF8 Character Sets They Sltimate Guide Systems',
+        description: '<div>skskk</div>',
     },
     {
         id: 2,
@@ -43,4 +47,14 @@ const articlesArray: Article[] = [
         text: 'Choose Awesome Vegetables For Your Daily Life Routine',
     },
 ]
+
+export const getArticlesObject = (array: Article[]) =>
+    array.reduce(
+        (object, product) => ({
+            ...object,
+            [product.id]: product,
+        }),
+        {}
+    )
+
 export default articlesArray

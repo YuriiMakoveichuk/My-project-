@@ -5,14 +5,17 @@ import Typography from '@mui/material/Typography'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
 import { Button, CardActionArea, CardActions } from '@mui/material'
 import './ArticleListItem.scss'
+import { Link } from 'react-router-dom'
 
 type Props = {
     title: string
     type: string
     text: string
+    id: number
+    description?: string
 }
 
-const ArticleListItem = ({ title, type, text }: Props) => {
+const ArticleListItem = ({ title, type, text, id, description }: Props) => {
     return (
         <Card sx={{ maxWidth: 390 }}>
             <CardMedia
@@ -32,8 +35,12 @@ const ArticleListItem = ({ title, type, text }: Props) => {
                         component="div"
                         className="article-title"
                     >
-                        {text}
+                        <Link to={`/articles/${id}`}>{text}</Link>
                     </Typography>
+                    <div
+                        className="article-text-pars"
+                        // dangerouslySetInnerHTML={{ __html: description }}
+                    ></div>
 
                     <CardActions>
                         <Button className="article-btn">

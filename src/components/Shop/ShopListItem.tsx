@@ -4,7 +4,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import Rating from '@mui/material/Rating'
 import Button from '@mui/material/Button'
-import { TextField } from '@mui/material'
+import Quatity from 'components/Quantity/Quatity'
 import { useState } from 'react'
 
 type Props = {
@@ -17,14 +17,12 @@ type Props = {
 
 const ShopListItem = ({ id, title, type, price, AddProductToCart }: Props) => {
     const [count, setCount] = useState<number>(1)
-
     const onDecrementClick = () => {
         setCount((prevState) => prevState - 1)
     }
     const onIncrementClick = () => {
         setCount((prevState) => prevState + 1)
     }
-
     return (
         <>
             <Card className="swiper-card">
@@ -52,23 +50,14 @@ const ShopListItem = ({ id, title, type, price, AddProductToCart }: Props) => {
                         >
                             $ {price}
                         </Typography>
-                        <div className="shop-card-quantity">
-                            <Button
-                                variant="outlined"
-                                onClick={() => onDecrementClick()}
-                                disabled={count <= 1}
-                            >
-                                -
-                            </Button>
-                            <TextField value={count} size="small" />
-                            <Button
-                                variant="outlined"
-                                onClick={() => onIncrementClick()}
-                                disabled={count >= 50}
-                            >
-                                +
-                            </Button>
-                        </div>
+
+                        <Quatity
+                            count={count}
+                            onDecrementClick={onDecrementClick}
+                            onIncrementClick={onIncrementClick}
+                            minCount={1}
+                        />
+
                         <Button
                             className="swiper-btn"
                             variant="contained"

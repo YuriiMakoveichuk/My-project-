@@ -1,4 +1,6 @@
 import slidersArray, { Product, getProductsObject } from 'utils/slidersArray'
+import CartProductListItem from './CartProductListItem'
+import { Container, Grid } from '@mui/material'
 
 type Props = {
     productsInCart: {
@@ -7,22 +9,27 @@ type Props = {
     productsObject?: {
         [id: number]: Product
     }
+
     CartItem?: any
 }
 
 const CartProductLict = ({
     productsInCart,
     productsObject = getProductsObject(slidersArray),
+    CartItem = CartProductListItem,
 }: Props) => {
     return (
-        <div className="card">
+        <>
             {Object.keys(productsInCart).map((productId) => (
-                <div key={productId}>
-                    {productsObject[parseInt(productId)].type}:
-                    {productsInCart[parseInt(productId)]}
-                </div>
+                <Grid item xs={12} sm={6} md={3}>
+                    <CartItem
+                        key={productId}
+                        product={productsObject[parseInt(productId)]}
+                        productCount={productsInCart[parseInt(productId)]}
+                    />
+                </Grid>
             ))}
-        </div>
+        </>
     )
 }
 

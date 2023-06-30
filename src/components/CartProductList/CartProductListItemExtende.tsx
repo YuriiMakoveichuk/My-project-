@@ -2,8 +2,12 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import Rating from '@mui/material/Rating'
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined'
+import { Button } from '@mui/material'
 import { Product } from 'utils/slidersArray'
+import { useContext } from 'react'
+import { AppContext } from 'Container/App/App'
+import Quatity from 'components/Quantity/Quatity'
 
 type Props = {
     product: Product
@@ -11,6 +15,8 @@ type Props = {
 }
 
 const CartProductListItemExtended = ({ product, productCount }: Props) => {
+    const data = useContext(AppContext)
+
     return (
         <>
             <Card className="swiper-card">
@@ -21,8 +27,6 @@ const CartProductListItemExtended = ({ product, productCount }: Props) => {
                     alt="fruit"
                 />
                 <div className="shop-card">
-                    <Typography component="legend"></Typography>
-                    <Rating name="customized-10" defaultValue={2} max={5} />
                     <CardContent>
                         <Typography
                             className="swiper-text"
@@ -36,8 +40,41 @@ const CartProductListItemExtended = ({ product, productCount }: Props) => {
                             variant="body2"
                             color="text.secondary"
                         >
-                            $ {productCount}
+                            Count: {productCount}
                         </Typography>
+                        <Typography
+                            className="swiper-text"
+                            variant="body2"
+                            color="text.secondary"
+                        >
+                            Price: $ {product.price}
+                        </Typography>
+                        <Quatity
+                            count={productCount}
+                            onDecrementClick={() =>
+                                productCount === 1
+                                    ? data?.removeProoductFromCart(product.id)
+                                    : data?.changeProductQuatity(
+                                          product.id,
+                                          productCount - 1
+                                      )
+                            }
+                            onIncrementClick={() =>
+                                data?.changeProductQuatity(
+                                    product.id,
+                                    productCount + 1
+                                )
+                            }
+                            minCount={0}
+                        />
+                        <Button
+                            className="card-page-btn"
+                            onClick={() =>
+                                data?.removeProoductFromCart(product.id)
+                            }
+                        >
+                            <DeleteOutlineOutlinedIcon />
+                        </Button>
                     </CardContent>
                 </div>
             </Card>

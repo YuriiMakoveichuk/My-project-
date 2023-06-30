@@ -1,8 +1,9 @@
 import Banner from 'components/Banner/Banner'
 import CartTotal from 'components/CartTotal/CartTotal'
-import { Container } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 import CartProductLict from 'components/CartProductList/CartProductLict'
 import CartProductListItemExtended from 'components/CartProductList/CartProductListItemExtende'
+import './CardPage.scss'
 
 type Props = {
     productsInCart: {
@@ -15,13 +16,13 @@ const CardPage = ({ productsInCart }: Props) => {
         <>
             <Banner />
             <Container>
-                <div>
+                <Grid container spacing={4} className="card-page">
                     <CartProductLict
                         productsInCart={productsInCart}
                         CartItem={CartProductListItemExtended}
                     />
-                    <CartTotal productsInCart={productsInCart} />
-                </div>
+                </Grid>
+                <CartTotal productsInCart={productsInCart} />
             </Container>
         </>
     )
