@@ -7,11 +7,17 @@ type Props = {}
 const SliderList = (props: Props) => {
     return (
         <>
-            {slidersArray.map(({ title, type, price }) => (
-                <SwiperSlide>
-                    <SliderListItem title={title} type={type} price={price} />
-                </SwiperSlide>
-            ))}
+            <SwiperSlide>
+                {slidersArray.map(({ title, type, price }) => (
+                    <SwiperSlide>
+                        <SliderListItem
+                            title={title}
+                            type={type}
+                            price={price}
+                        />
+                    </SwiperSlide>
+                ))}
+            </SwiperSlide>
         </>
     )
 }

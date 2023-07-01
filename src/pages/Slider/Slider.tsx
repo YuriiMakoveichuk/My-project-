@@ -3,9 +3,9 @@ import { Pagination } from 'swiper'
 import { Container } from '@mui/material'
 import Typography from '@mui/material/Typography'
 import SliderList from './SliderList'
-import './Slider.scss'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import './Slider.scss'
 
 type Props = {}
 
