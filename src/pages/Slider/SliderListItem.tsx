@@ -3,11 +3,8 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
-import VisibilityIcon from '@mui/icons-material/Visibility'
-import Button from '@mui/material/Button'
 import Rating from '@mui/material/Rating'
-import { NavLink } from 'react-router-dom'
+import ButtonSlider from 'components/ButtonSlider/ButtonSlider'
 
 type Props = {
     title: string
@@ -20,23 +17,7 @@ const SliderListItem = ({ title, type, price }: Props) => {
         <>
             <Card className="swiper-card">
                 <CardActionArea>
-                    <div className="swiper-icons">
-                        <FavoriteBorderIcon
-                            fontSize="medium"
-                            className="swiper-like"
-                        ></FavoriteBorderIcon>
-                        <VisibilityIcon
-                            fontSize="medium"
-                            className=" swiper-like swiper-visibility"
-                        ></VisibilityIcon>
-
-                        <Button
-                            className="swiper-btn swiper-margin-btn "
-                            variant="contained"
-                        >
-                            <NavLink to={'/shop'}>Add to cart +</NavLink>
-                        </Button>
-                    </div>
+                    <ButtonSlider />
                     <CardMedia
                         className="swiper-img"
                         component="img"

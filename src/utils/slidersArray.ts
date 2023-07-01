@@ -69,6 +69,27 @@ const slidersArray: Product[] = [
         price: 55.0,
         category: 'fruits',
     },
+    {
+        id: 10,
+        title: './images/orange.png',
+        type: 'Organic orange',
+        price: 55.0,
+        category: 'fruits',
+    },
+    {
+        id: 11,
+        title: './images/orange.png',
+        type: 'Organic orange',
+        price: 55.0,
+        category: 'fruits',
+    },
+    {
+        id: 9,
+        title: './images/orange.png',
+        type: 'Organic orange',
+        price: 55.0,
+        category: 'fruits',
+    },
 ]
 
 export const getProductsObject = (array: Product[]) =>

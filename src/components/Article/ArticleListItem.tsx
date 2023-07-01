@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
-import { Button, CardActionArea, CardActions } from '@mui/material'
+import { Button, CardActionArea, CardActions, colors } from '@mui/material'
 import './ArticleListItem.scss'
 import { Link } from 'react-router-dom'
 
@@ -39,13 +39,13 @@ const ArticleListItem = ({ title, type, text, id, description }: Props) => {
                     </Typography>
                     <div
                         className="article-text-pars"
-                        // dangerouslySetInnerHTML={{ __html: description }}
+                        // dangerouslySetInnerHTML={{ __html:description }}
                     ></div>
 
                     <CardActions>
                         <Button className="article-btn">
-                            Read more
-                            <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon>
+                            <Link to={`/articles/${id}`}>Read more</Link>
+                            <KeyboardDoubleArrowRightIcon />
                         </Button>
                     </CardActions>
                 </CardActionArea>
