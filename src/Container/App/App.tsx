@@ -11,7 +11,6 @@ import ShopFruits from 'components/ShopFruits/ShopFruits'
 import ShopVegetables from 'components/ShopVegetables/ShopVegetables'
 import CardPage from 'pages/CardPage/CardPage'
 import Home from 'pages/Home/Home'
-import Title from 'pages/Title/Title'
 import { createContext, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 

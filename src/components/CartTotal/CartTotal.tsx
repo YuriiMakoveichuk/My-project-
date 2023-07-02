@@ -1,5 +1,3 @@
-import { colors } from '@mui/material'
-import { SassColor } from 'sass'
 import slidersArray, { Product, getProductsObject } from 'utils/slidersArray'
 
 type Props = {
