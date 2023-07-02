@@ -1,6 +1,12 @@
+.swiper-button-prev {
+    display: none;
+}
+.swiper-button-next {
+    display: none;
+}
+
 .title-menu {
     display: flex;
-    height: 650px;
     justify-content: space-between;
     margin-top: 50px;
 }
@@ -8,6 +14,7 @@
     font-family: 'Shadows Into Light', Sans-serif;
     font-size: 30px;
     color: #ff7802;
+    margin-top: 80px;
 }
 .title-menu-organic {
     font-size: 65px;
@@ -50,22 +57,20 @@
 }
 
 .title-fruits {
-    display: none;
+    display: flex;
+    justify-items: center;
 }
 
-@media (min-width: 1200px) {
-    .title-menu-header {
-        margin-top: 80px;
-    }
-    .title-fruits {
-        display: flex;
-        justify-items: center;
-    }
-    .title-fruits-organic {
-        position: absolute;
-        z-index: 10;
-    }
-    .title-fruits-img {
-        position: relative;
-    }
+.title-fruits-organic {
+    position: absolute;
+    z-index: 10;
+}
+.title-fruits-img {
+    position: relative;
+}
+.fruits2-organic2 {
+    margin-left: 300px;
+}
+.title-menu-text {
+    margin-left: 50px;
 }

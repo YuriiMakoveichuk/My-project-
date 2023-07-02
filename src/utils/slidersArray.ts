@@ -84,7 +84,7 @@ const slidersArray: Product[] = [
         category: 'fruits',
     },
     {
-        id: 9,
+        id: 12,
         title: './images/orange.png',
         type: 'Organic orange',
         price: 55.0,

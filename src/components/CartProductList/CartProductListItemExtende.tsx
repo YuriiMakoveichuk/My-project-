@@ -19,7 +19,7 @@ const CartProductListItemExtended = ({ product, productCount }: Props) => {
 
     return (
         <>
-            <Card className="swiper-card">
+            <Card className="shoping-card">
                 <CardMedia
                     className="swiper-img"
                     component="img"

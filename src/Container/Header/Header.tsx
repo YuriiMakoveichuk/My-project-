@@ -10,6 +10,7 @@ import CartHeader from 'components/CartHeader/CartHeader'
 import './Header.scss'
 import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     productsInCart: {
@@ -24,15 +25,27 @@ const Header = ({ productsInCart }: Props) => {
                 <Toolbar className="header-height">
                     <Logo />
                     <Menu />
-                    <CartHeader productsInCart={productsInCart} />
-                    <div>
-                        <ul className="header-menu-shop">
-                            <li>
-                                <SearchSharpIcon></SearchSharpIcon>
-                            </li>
+
+                    <div className="header-menu-shop">
+                        <ul className="header-menu-basket">
                             <li>
                                 <ShoppingBasketSharpIcon></ShoppingBasketSharpIcon>
+                                <div className="header-cartheader">
+                                    <CartHeader
+                                        productsInCart={productsInCart}
+                                    />
+                                    <Button
+                                        className="swiper-btn cartheader-btn"
+                                        variant="contained"
+                                    >
+                                        <NavLink to={'/cart'}>
+                                            Visit to Cart
+                                        </NavLink>
+                                    </Button>
+                                </div>
                             </li>
+                        </ul>
+                        <ul>
                             <li>
                                 <AccountCircleSharpIcon></AccountCircleSharpIcon>
                             </li>
@@ -43,13 +56,7 @@ const Header = ({ productsInCart }: Props) => {
                         Consultations
                         <KeyboardDoubleArrowRightSharpIcon></KeyboardDoubleArrowRightSharpIcon>
                     </Button>
-                    <div className="header-buy-min">
-                        <div className="header-buy-point-min">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
+
                     <div className="header-buy-point">
                         <i></i>
                         <i></i>

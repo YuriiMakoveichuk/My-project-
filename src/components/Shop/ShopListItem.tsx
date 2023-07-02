@@ -25,7 +25,7 @@ const ShopListItem = ({ id, title, type, price, AddProductToCart }: Props) => {
     }
     return (
         <>
-            <Card className="swiper-card">
+            <Card className="shoping-card">
                 <CardMedia
                     className="swiper-img"
                     component="img"

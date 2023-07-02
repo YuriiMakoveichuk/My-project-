@@ -1,100 +1,97 @@
-@media (min-width: 1200px) {
-    .slider-header {
-        text-align: center;
-        font-family: 'Shadows Into Light', Sans-serif;
-        font-size: 30px;
-        color: #ff7802;
-        margin: 26px 0;
-    }
+.slider-header {
+    text-align: center;
+    font-family: 'Shadows Into Light', Sans-serif;
+    font-size: 30px;
+    color: #ff7802;
+    margin: 26px 0;
+}
 
-    .slider-header-text {
-        text-align: center;
-        font-size: 45px;
-        font-weight: 600;
-        color: #1b2336;
-        font-family: livvic, sans-serif;
-        margin-bottom: 30px;
-    }
+.slider-header-text {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: #1b2336;
+    font-family: livvic, sans-serif;
+    margin-bottom: 30px;
+}
 
-    .swiper {
-        width: 100%;
-        height: 100%;
-    }
-    .swiper-pagination {
-        position: relative;
-        margin-top: 40px;
-    }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination {
+    position: relative;
+}
 
-    .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #ff7802;
-    }
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ff7802;
+}
 
-    .swiper-slide {
-        text-align: center;
-        display: flex;
-        // justify-content: center;
-        align-items: center;
-    }
+.swiper-slide {
+    display: flex;
+    align-items: center;
+}
 
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    .swiper-card {
-        height: 100%;
-        background-color: #edf5ed;
-        // height: 320px;
-    }
-    .swiper-text {
-        color: #1b2336;
-        font-family: livvic, sans-serif;
-        font-size: 15px;
-        font-weight: 700;
-        padding-bottom: 10px;
-    }
-    .swiper-like {
-        background-color: #1b2336;
-        color: white;
-        border-radius: 3px;
-        display: flow-root;
-        margin-top: 10px;
-    }
-    .swiper-like:hover {
-        background-color: #76a713;
-    }
+.swiper-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.swiper-card {
+    height: 100%;
+    background-color: #edf5ed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.swiper-text {
+    color: #1b2336;
+    font-family: livvic, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.swiper-like {
+    background-color: #1b2336;
+    color: white;
+    border-radius: 3px;
+    display: flow-root;
+    margin-top: 10px;
+}
+.swiper-like:hover {
+    background-color: #76a713;
+}
 
-    .swiper-icons {
-        position: absolute;
-        text-align: left;
-        margin-left: 20px;
-        z-index: 40;
-        display: none;
-    }
-    .swiper-card:hover .swiper-icons {
-        display: block;
-    }
+.swiper-icons {
+    position: absolute;
+    text-align: left;
+    margin-left: 20px;
+    z-index: 40;
+    display: none;
+}
+.swiper-card:hover .swiper-icons {
+    display: block;
+}
 
-    .swiper-btn {
-        background-color: #76a713;
-        border-radius: 10px;
-        text-transform: none;
-        font-size: 15px;
-        font-weight: 700;
-        font-family: livvic, sans-serif;
-    }
-    .swiper-margin-btn {
-        margin-top: 200px;
-        margin-left: 17px;
-    }
+.swiper-btn {
+    background-color: #76a713;
+    border-radius: 10px;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: livvic, sans-serif;
+}
+.swiper-margin-btn {
+    margin-top: 200px;
+    margin-left: 17px;
+}
 
-    .swiper-btn:hover {
-        background-color: #ff7802;
-    }
-    .css-iljtu2-MuiRating-root {
-        margin-top: -15px;
-    }
+.swiper-btn:hover {
+    background-color: #ff7802;
+}
+.css-iljtu2-MuiRating-root {
+    margin-top: -15px;
 }

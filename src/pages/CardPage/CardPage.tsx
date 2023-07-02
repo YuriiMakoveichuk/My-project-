@@ -3,6 +3,7 @@ import CartTotal from 'components/CartTotal/CartTotal'
 import { Container, Grid } from '@mui/material'
 import CartProductLict from 'components/CartProductList/CartProductLict'
 import CartProductListItemExtended from 'components/CartProductList/CartProductListItemExtende'
+import Typography from '@mui/material/Typography/Typography'
 import './CardPage.scss'
 
 type Props = {
@@ -22,7 +23,9 @@ const CardPage = ({ productsInCart }: Props) => {
                         CartItem={CartProductListItemExtended}
                     />
                 </Grid>
-                <CartTotal productsInCart={productsInCart} />
+                <Typography variant="h4">
+                    <CartTotal productsInCart={productsInCart} />
+                </Typography>
             </Container>
         </>
     )

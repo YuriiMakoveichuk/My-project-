@@ -120,7 +120,7 @@ const Footer = (props: Props) => {
                     </Grid>
 
                     <div className="footer-botton-text">
-                        Copyright © 2022 MunFirm. All Rights Reserved.
+                        Copyright © 2023 MunFirm. All Rights Reserved.
                     </div>
                 </Container>
             </AppBar>

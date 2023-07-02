@@ -11,6 +11,7 @@ import ShopFruits from 'components/ShopFruits/ShopFruits'
 import ShopVegetables from 'components/ShopVegetables/ShopVegetables'
 import CardPage from 'pages/CardPage/CardPage'
 import Home from 'pages/Home/Home'
+import Title from 'pages/Title/Title'
 import { createContext, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
@@ -64,19 +65,13 @@ const App = () => {
                     <CssBaseline />
                     <HeaderTop />
                     <Header productsInCart={productsInCart} />
+
                     <Container>
                         <Routes>
                             <Route path="/" element={<Home />} />
                         </Routes>
                     </Container>
                     <Routes>
-                        <Route
-                            path="/contact"
-                            element={
-                                <CardPage productsInCart={productsInCart} />
-                            }
-                        />
-
                         <Route
                             path="/shop"
                             element={
@@ -97,6 +92,12 @@ const App = () => {
                                 <ShopVegetables
                                     AddProductToCart={AddProductToCart}
                                 />
+                            }
+                        />
+                        <Route
+                            path="/cart"
+                            element={
+                                <CardPage productsInCart={productsInCart} />
                             }
                         />
                         <Route path="/articles/:id" element={<ArticlePage />} />
