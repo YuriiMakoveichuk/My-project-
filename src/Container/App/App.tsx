@@ -9,6 +9,7 @@ import ScrollToTop from 'components/ScrollToTop/ScrollToTop'
 import Shop from 'components/Shop/Shop'
 import ShopFruits from 'components/ShopFruits/ShopFruits'
 import ShopVegetables from 'components/ShopVegetables/ShopVegetables'
+import Blog from 'pages/Blog/Blog'
 import CardPage from 'pages/CardPage/CardPage'
 import Home from 'pages/Home/Home'
 import { createContext, useState } from 'react'
@@ -70,6 +71,9 @@ const App = () => {
                             <Route path="/" element={<Home />} />
                         </Routes>
                     </Container>
+                    <Routes>
+                        <Route path="/blog" element={<Blog />} />
+                    </Routes>
                     <Routes>
                         <Route
                             path="/shop"

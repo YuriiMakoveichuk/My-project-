@@ -15,13 +15,15 @@ const ArticleList = (props: Props) => {
                     Latest News & Blog
                 </Typography>
                 <Grid container spacing={4}>
-                    {articlesArray.map(({ id, title, type, text }) => (
+                    {articlesArray.map(({ id, title, type, text, ontext }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
                             <ArticleListItem
                                 title={title}
                                 type={type}
                                 text={text}
                                 id={id}
+                                // description={description}
+                                ontext={ontext}
                             />
                         </Grid>
                     ))}

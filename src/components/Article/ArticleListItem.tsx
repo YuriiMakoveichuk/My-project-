@@ -4,18 +4,20 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight'
 import { Button, CardActionArea, CardActions } from '@mui/material'
-import './ArticleListItem.scss'
+
 import { Link } from 'react-router-dom'
+
+import './ArticleListItem.scss'
 
 type Props = {
     title: string
     type: string
     text: string
     id: number
-    description?: string
+    ontext: string
 }
 
-const ArticleListItem = ({ title, type, text, id, description }: Props) => {
+const ArticleListItem = ({ title, type, text, id, ontext }: Props) => {
     return (
         <Card sx={{ maxWidth: 390 }}>
             <CardMedia
@@ -35,12 +37,30 @@ const ArticleListItem = ({ title, type, text, id, description }: Props) => {
                         component="div"
                         className="article-title"
                     >
-                        <Link to={`/articles/${id}`}>{text}</Link>
+                        <Link to={`/articles/${id}`}>
+                            {/* {text} */}
+                            <div
+                                // className="op"
+                                // className="pdp"
+                                dangerouslySetInnerHTML={{
+                                    __html: text,
+                                }}
+                            ></div>
+                            {/* <div
+                                className="pdpddbn"
+                                dangerouslySetInnerHTML={{
+                                    __html: ontext,
+                                }}
+                            ></div> */}
+                        </Link>
                     </Typography>
-                    <div
+
+                    {/* <div
                         className="article-text-pars"
-                        // dangerouslySetInnerHTML={{ __html:description }}
-                    ></div>
+                        dangerouslySetInnerHTML={{
+                            __html: description,
+                        }}
+                    ></div> */}
 
                     <CardActions>
                         <Button className="article-btn">

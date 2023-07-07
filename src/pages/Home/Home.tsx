@@ -1,4 +1,5 @@
 import ArticleList from 'components/Article/ArticleList'
+import Reviews from 'components/Reviews/Reviews'
 import Slider from 'pages/Slider/Slider'
 import Title from 'pages/Title/Title'
 
@@ -10,6 +11,7 @@ const Home = (props: Props) => {
             <Title />
             <Slider />
             <ArticleList />
+            <Reviews />
         </>
     )
 }
