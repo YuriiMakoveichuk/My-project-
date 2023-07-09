@@ -8,9 +8,15 @@
     text-align: center;
     margin-top: 20px;
     color: #1a2428;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 600;
     font-family: 'Livvic', sans-serif;
+}
+.blog-image {
+    transition: transform 800ms ease;
+}
+.blog-image:hover {
+    transform: scale(1.05);
 }
 
 .blog-card {

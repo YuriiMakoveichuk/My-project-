@@ -15,7 +15,7 @@ const ArticleList = (props: Props) => {
                     Latest News & Blog
                 </Typography>
                 <Grid container spacing={4}>
-                    {articlesArray.map(({ id, title, type, text, ontext }) => (
+                    {articlesArray.map(({ id, title, type, text }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
                             <ArticleListItem
                                 title={title}
@@ -23,7 +23,6 @@ const ArticleList = (props: Props) => {
                                 text={text}
                                 id={id}
                                 // description={description}
-                                ontext={ontext}
                             />
                         </Grid>
                     ))}

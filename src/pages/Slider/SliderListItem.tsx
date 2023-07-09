@@ -4,7 +4,8 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import Rating from '@mui/material/Rating'
-import ButtonSlider from 'components/ButtonSlider/ButtonSlider'
+import Button from '@mui/material/Button'
+import { NavLink } from 'react-router-dom'
 
 type Props = {
     title: string
@@ -17,7 +18,14 @@ const SliderListItem = ({ title, type, price }: Props) => {
         <>
             <Card className="swiper-card">
                 <CardActionArea>
-                    <ButtonSlider />
+                    <div className="swiper-icons">
+                        <Button
+                            className="swiper-btn swiper-margin-btn "
+                            variant="contained"
+                        >
+                            <NavLink to={'/shop'}>Visit to Shop</NavLink>
+                        </Button>
+                    </div>
                     <CardMedia
                         className="swiper-img"
                         component="img"

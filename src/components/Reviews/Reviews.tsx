@@ -7,6 +7,9 @@ import {
     Typography,
 } from '@mui/material'
 import { useState } from 'react'
+import feedback from 'assets/feedback.jpg'
+import feedback_right from 'assets/feedback_right.png'
+import './Reviews.scss'
 
 type Props = {}
 
@@ -65,39 +68,64 @@ const Reviews = (props: Props) => {
     }
 
     return (
-        <div>
-            <Typography>Reviews</Typography>
+        <div className="reviews">
+            <div className="reviews-top">
+                <div className=" reviews-header">
+                    <Typography className="reviews-menu-header">
+                        Customer Reviews
+                    </Typography>
+                    <Typography className="reviews-menu-organic">
+                        Valuable Customer’s Feedback (Reviews)
+                    </Typography>
+                    <form onSubmit={onSend}>
+                        <Typography className="reviews-form">
+                            Please leave a review
+                        </Typography>
+                        <div>
+                            <TextField
+                                size="small"
+                                placeholder="Your name"
+                                value={newReview.name}
+                                onChange={handleName}
+                                color="success"
+                            />
+                        </div>
+                        <div>
+                            <TextareaAutosize
+                                className="reviews-text"
+                                minRows={6}
+                                placeholder="Your text"
+                                value={newReview.text}
+                                onChange={handleText}
+                            />
+                        </div>
+                        <Button
+                            className="reviews-btn"
+                            variant="outlined"
+                            type="submit"
+                        >
+                            Send
+                        </Button>
+                    </form>
+                </div>
+                <div className="reviews-img">
+                    <div className="reviews-header-img">
+                        <img src={feedback} alt="Fake foto" />
+                    </div>
+                    <div className="reviews-header-img-right">
+                        <img src={feedback_right} alt="Fake foto" />
+                    </div>
+                </div>
+            </div>
 
             {review.map(({ name, text }, i) => (
-                <Card key={i}>
+                <Card key={i} sx={{ margin: '20px 0' }}>
                     <CardContent>
-                        <div>{name}:</div>
+                        <div className="reviews-name">{name}:</div>
                         <div>{text}</div>
                     </CardContent>
                 </Card>
             ))}
-            <form onSubmit={onSend}>
-                <Typography>Please leave a review</Typography>
-                <div>
-                    <TextField
-                        size="small"
-                        placeholder="Your name"
-                        value={newReview.name}
-                        onChange={handleName}
-                    />
-                </div>
-                <div>
-                    <TextareaAutosize
-                        minRows={10}
-                        placeholder="Your text"
-                        value={newReview.text}
-                        onChange={handleText}
-                    />
-                </div>
-                <Button variant="outlined" type="submit">
-                    Send
-                </Button>
-            </form>
         </div>
     )
 }

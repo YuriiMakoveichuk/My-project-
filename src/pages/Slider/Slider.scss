@@ -38,6 +38,10 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: transform 500ms ease;
+}
+.swiper-img:hover {
+    transform: scale(1.15);
 }
 .swiper-card {
     height: 100%;
@@ -54,22 +58,10 @@
     font-weight: 700;
     padding-bottom: 10px;
 }
-.swiper-like {
-    background-color: #1b2336;
-    color: white;
-    border-radius: 3px;
-    display: flow-root;
-    margin-top: 10px;
-}
-.swiper-like:hover {
-    background-color: #76a713;
-}
-
 .swiper-icons {
     position: absolute;
     text-align: left;
     margin-left: 20px;
-    z-index: 40;
     display: none;
 }
 .swiper-card:hover .swiper-icons {
@@ -84,8 +76,12 @@
     font-weight: 700;
     font-family: livvic, sans-serif;
 }
+.swiper-btn a {
+    color: white;
+    text-decoration: none;
+}
 .swiper-margin-btn {
-    margin-top: 200px;
+    margin-top: 260px;
     margin-left: 17px;
 }
 

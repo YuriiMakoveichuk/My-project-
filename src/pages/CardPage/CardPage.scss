@@ -1,3 +1,8 @@
+.card-text {
+    font-family: livvic, sans-serif;
+    margin-top: 30px;
+}
+
 .card-page {
     margin: 40px 0;
 }
@@ -11,4 +16,17 @@
 }
 .card-page-btn:hover {
     border-color: #1d213e;
+}
+.card-page-form-text {
+    color: #ff7802;
+    margin-top: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    font-weight: 800;
+}
+.card-page-text {
+    font-family: livvic, sans-serif;
+}
+.card-page-input {
+    margin: 20px 0;
 }

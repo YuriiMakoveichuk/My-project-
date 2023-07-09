@@ -1,6 +1,6 @@
 import Banner from 'components/Banner/Banner'
 import slidersArray from 'utils/slidersArray'
-import { Container, Grid } from '@mui/material'
+import { Container, Grid, Typography } from '@mui/material'
 import ShopListItem from 'components/Shop/ShopListItem'
 
 type Props = {
@@ -12,6 +12,14 @@ const ShopVegetables = ({ AddProductToCart }: Props) => {
         <>
             <Banner />
             <Container>
+                <div className="shop-header">
+                    <Typography className="title-menu-header">
+                        Welcome to Munfirm
+                    </Typography>
+                    <Typography className="title-menu-organic">
+                        Organic Vegetables
+                    </Typography>
+                </div>
                 <Grid container spacing={4}>
                     {slidersArray
                         .filter((item) => item.category === 'vegetables')

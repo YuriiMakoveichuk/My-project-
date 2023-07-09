@@ -1,4 +1,5 @@
 import { Container } from '@mui/material'
+import TextBanner from 'components/Banner/TextBanner'
 import Reviews from 'components/Reviews/Reviews'
 import { useParams } from 'react-router-dom'
 import articlesArray, { getArticlesObject } from 'utils/articlesArray'
@@ -17,17 +18,18 @@ const ArticlePage = ({
     const producId = id || ''
 
     return (
-        <Container>
-            <>
-                <div className="pdp">
+        <>
+            <TextBanner />
+            <Container>
+                <div className="article-page">
                     {articlesObject[parseInt(producId)].text}
-                    <div className="pdpddbn">
+                    <div className="article-page-text">
                         {articlesObject[parseInt(producId)].ontext}
                     </div>
                 </div>
                 <Reviews />
-            </>
-        </Container>
+            </Container>
+        </>
     )
 }
 

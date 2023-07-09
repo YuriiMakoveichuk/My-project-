@@ -5,6 +5,12 @@
     font-family: 'Shadows Into Light', cursive;
     margin: 26px 0;
 }
+.article-image {
+    transition: transform 500ms ease;
+}
+.article-image:hover {
+    transform: scale(1.1);
+}
 .article-header-text {
     font-size: 40px;
     text-align: center;
@@ -23,12 +29,20 @@
     font-size: 22px;
     font-weight: 600;
     font-family: livvic, sans-serif;
-    color: #1d213e;
     line-height: 30px;
     margin-top: 20px;
+    transition: transform 800ms ease;
+}
+.article-title:hover {
+    transform: scale(1.05);
+}
+.article-title a {
+    color: #1d213e;
+    text-decoration: none;
 }
 
-.article-menu:hover .article-title {
+.article-title a:hover {
+    color: #76a713;
     text-decoration: underline;
 }
 .article-btn {
@@ -37,19 +51,36 @@
     font-family: livvic, sans-serif;
     font-weight: 600;
     text-transform: none;
+    transition: transform 800ms ease;
 }
-.article-menu:hover .article-btn {
+.article-btn a {
+    color: #666;
+    text-decoration: none;
+    transition: transform 800ms ease;
+}
+.article-btn:hover {
     color: #76a713;
+    transform: scale(1.05);
 }
-.pdp {
-    color: #1d213e;
-    margin-top: 40px;
-    color: red;
-    font-size: 100px;
+.article-btn a:hover {
+    color: #76a713;
+    transform: scale(1.05);
 }
-.pdpddbn {
-    display: block;
-    font-size: 50px;
-    font-weight: 800;
+.article-page {
     color: #ff7802;
+    margin-top: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.article-page-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1d213e;
+    text-align: left;
+    font-family: nunito sans, sans-serif;
 }
