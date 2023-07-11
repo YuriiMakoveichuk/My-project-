@@ -126,7 +126,7 @@ const CardPage = ({ id, productsInCart }: Props) => {
                     <div>Dear, {orderData.name} thanks for your order</div>
                     <div>{orderData.phone} for communication</div>
                     <div>
-                        Delivery of the order to the address:{' '}
+                        Delivery of the order to the address:
                         {orderData.address}
                     </div>
                 </div>
