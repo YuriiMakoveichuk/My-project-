@@ -6,12 +6,13 @@ import ShoppingBasketSharpIcon from '@mui/icons-material/ShoppingBasketSharp'
 import KeyboardDoubleArrowRightSharpIcon from '@mui/icons-material/KeyboardDoubleArrowRightSharp'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 import CartHeader from 'components/CartHeader/CartHeader'
-import './Header.scss'
 import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import Register from 'components/Register/Register'
+
+import './Header.scss'
 
 type Props = {
     productsInCart: {

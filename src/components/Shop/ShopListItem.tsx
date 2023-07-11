@@ -2,10 +2,12 @@ import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import Rating from '@mui/material/Rating'
 import Button from '@mui/material/Button'
 import Quatity from 'components/Quantity/Quatity'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useState } from 'react'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
 
 type Props = {
     id: number
@@ -23,18 +25,31 @@ const ShopListItem = ({ id, title, type, price, AddProductToCart }: Props) => {
     const onIncrementClick = () => {
         setCount((prevState) => prevState + 1)
     }
+
+    const isLiked = useAppSelector((state) => state.productsLikeState[id])
+    const dispatch = useAppDispatch()
+
     return (
         <>
             <Card className="shoping-card">
+                <Button
+                    className="shoping-like"
+                    onClick={() =>
+                        dispatch({
+                            type: 'TOGGLE_LIKE',
+                            id,
+                        })
+                    }
+                >
+                    {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+                </Button>
                 <CardMedia
-                    className="swiper-img"
+                    className="swiper-img shoping-img"
                     component="img"
                     image={title}
                     alt="fruit"
                 />
                 <div className="shop-card">
-                    <Typography component="legend"></Typography>
-                    <Rating name="customized-10" defaultValue={2} max={5} />
                     <CardContent>
                         <Typography
                             className="swiper-text"

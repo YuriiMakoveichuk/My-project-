@@ -42,23 +42,6 @@ const Register = (props: Props) => {
         }))
     }
 
-    // const onSan = (e: React.FormEvent<HTMLElement>) => {
-    //     e.preventDefault()
-
-    //     axios
-    //         .post(
-    //             'https://my-json-server.typicode.com/kznkv-skillup/server/orders',
-    //             {
-    //                 name: chekinMan.name,
-    //                 email: chekinMan.email,
-    //             }
-    //         )
-    //         .then((res) => res.data)
-    //         .then(({ name, email }) => {
-    //             setCheckinMan({ name, email })
-    //         })
-    // }
-
     return (
         <>
             <ul className="register">

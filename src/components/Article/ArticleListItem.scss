@@ -5,6 +5,7 @@
     font-family: 'Shadows Into Light', cursive;
     margin: 26px 0;
 }
+
 .article-image {
     transition: transform 500ms ease;
 }
@@ -45,6 +46,11 @@
     color: #76a713;
     text-decoration: underline;
 }
+.article-button {
+    color: #666;
+    text-transform: none;
+    transition: transform 800ms ease;
+}
 .article-btn {
     color: #666;
     font-size: 16px;
@@ -58,14 +64,15 @@
     text-decoration: none;
     transition: transform 800ms ease;
 }
-.article-btn:hover {
+.article-button:hover .article-btn a {
     color: #76a713;
     transform: scale(1.05);
 }
-.article-btn a:hover {
+.article-button:hover .article-btn {
     color: #76a713;
     transform: scale(1.05);
 }
+
 .article-page {
     color: #ff7802;
     margin-top: 40px;
@@ -83,4 +90,23 @@
     color: #1d213e;
     text-align: left;
     font-family: nunito sans, sans-serif;
+}
+.article-menu-text {
+    display: flex;
+    justify-content: space-between;
+}
+.article-menu-btn {
+    color: #ff7800;
+    transition: transform 800ms ease;
+}
+.article-menu-btn:hover {
+    transform: scale(1.5);
+}
+.article-page-btn {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+.article-page-button {
+    margin-left: 150px;
 }

@@ -7,21 +7,42 @@ import { Button } from '@mui/material'
 import { Product } from 'utils/slidersArray'
 import { useContext } from 'react'
 import { AppContext } from 'Container/App/App'
+
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import Quatity from 'components/Quantity/Quatity'
 
 type Props = {
     product: Product
     productCount: number
+    id: number
 }
 
-const CartProductListItemExtended = ({ product, productCount }: Props) => {
+const CartProductListItemExtended = ({ id, product, productCount }: Props) => {
+    const isLiked = useAppSelector(
+        (state) => state.productsLikeState[product.id]
+    )
+    const dispatch = useAppDispatch()
+
     const data = useContext(AppContext)
 
     return (
         <>
             <Card className="shoping-card">
+                <Button
+                    className="shoping-like"
+                    onClick={() =>
+                        dispatch({
+                            type: 'TOGGLE_LIKE',
+                            id: product.id,
+                        })
+                    }
+                >
+                    {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+                </Button>
                 <CardMedia
-                    className="swiper-img"
+                    className="swiper-img shoping-img"
                     component="img"
                     image={product.title}
                     alt="fruit"

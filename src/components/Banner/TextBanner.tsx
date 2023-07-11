@@ -7,7 +7,11 @@ const TextBanner = (props: Props) => {
     return (
         <>
             <AppBar position="static">
-                <img src={text_banner} alt="fake banner" />
+                <img
+                    src={text_banner}
+                    alt="fake banner"
+                    style={{ height: 350 }}
+                />
             </AppBar>
         </>
     )

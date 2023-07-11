@@ -5,15 +5,17 @@ import CartProductLict from 'components/CartProductList/CartProductLict'
 import CartProductListItemExtended from 'components/CartProductList/CartProductListItemExtende'
 import Button from '@mui/material/Button'
 import { TextField, Typography } from '@mui/material'
-import './CardPage.scss'
 import { useState } from 'react'
 import axios from 'axios'
 import { NavLink } from 'react-router-dom'
+
+import './CardPage.scss'
 
 type Props = {
     productsInCart: {
         [id: number]: number
     }
+    id: number
 }
 type Order = {
     name: string
@@ -21,7 +23,7 @@ type Order = {
     address: string
 }
 
-const CardPage = ({ productsInCart }: Props) => {
+const CardPage = ({ id, productsInCart }: Props) => {
     const [orderData, setOrderData] = useState<Order>({
         name: '',
         phone: '',

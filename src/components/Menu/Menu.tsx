@@ -20,11 +20,13 @@ const Menu = (props: Props) => {
                     </Button>
                 </li>
                 <li className="shop-header-btn-text">
-                    <Button color="inherit" className="shop-menu">
-                        <NavLink to={'/shop'}>Shop</NavLink>
+                    <div className="shop-menu-hover">
+                        <Button color="inherit" className="shop-menu">
+                            <NavLink to={'/shop'}>Shop</NavLink>
 
-                        <KeyboardArrowDownIcon></KeyboardArrowDownIcon>
-                    </Button>
+                            <KeyboardArrowDownIcon />
+                        </Button>
+                    </div>
                     <ul className="header-home-menu">
                         <li>
                             <Button>
