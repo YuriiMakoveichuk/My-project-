@@ -27,10 +27,7 @@ type Context = {
 export const AppContext = createContext<Context | null>(null)
 
 const App = () => {
-    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({
-        // 1: 5,
-        // 2: 5,
-    })
+    const [productsInCart, setProductsInCart] = useState<ProductsInCart>({})
 
     const AddProductToCart = (id: number, count: number) => {
         setProductsInCart((prevState) => ({

@@ -1,9 +1,8 @@
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Button from '@mui/material/Button'
-import { Container, TextField, Typography } from '@mui/material'
+import { Container } from '@mui/material'
 import ShoppingBasketSharpIcon from '@mui/icons-material/ShoppingBasketSharp'
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp'
 import KeyboardDoubleArrowRightSharpIcon from '@mui/icons-material/KeyboardDoubleArrowRightSharp'
 import HighlightOffIcon from '@mui/icons-material/HighlightOff'
 import CartHeader from 'components/CartHeader/CartHeader'
@@ -12,6 +11,7 @@ import Logo from 'components/Logo/Logo'
 import Menu from 'components/Menu/Menu'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import Register from 'components/Register/Register'
 
 type Props = {
     productsInCart: {
@@ -20,16 +20,6 @@ type Props = {
 }
 
 const Header = ({ productsInCart }: Props) => {
-    const [register, setRegister] = useState<string>('header-register')
-
-    const changeRegister = () => {
-        setRegister((prevState) =>
-            prevState === 'header-register'
-                ? 'header-register-open'
-                : 'header-register'
-        )
-    }
-
     const [basket, setBasket] = useState<string>('header-cartheader')
 
     const changeBasket = () => {
@@ -81,49 +71,7 @@ const Header = ({ productsInCart }: Props) => {
                                 </div>
                             </li>
                         </ul>
-                        <ul className="register">
-                            <li>
-                                <Button
-                                    className="register-btn"
-                                    onClick={() => changeRegister()}
-                                >
-                                    <AccountCircleSharpIcon />
-                                </Button>
-
-                                <form className={register}>
-                                    <div className="header-register-close">
-                                        <Button
-                                            className="register-btn"
-                                            onClick={() => changeRegister()}
-                                        >
-                                            <HighlightOffIcon />
-                                        </Button>
-                                    </div>
-                                    <Typography className="header-register-text">
-                                        Register on the site
-                                    </Typography>
-                                    <div className="header-register-input">
-                                        <TextField
-                                            size="small"
-                                            placeholder="Your name"
-                                        ></TextField>
-                                    </div>
-                                    <div className="header-register-input">
-                                        <TextField
-                                            size="small"
-                                            placeholder="Your mail"
-                                        ></TextField>
-                                    </div>
-                                    <Button
-                                        className="reviews-btn"
-                                        variant="outlined"
-                                        type="submit"
-                                    >
-                                        Send
-                                    </Button>
-                                </form>
-                            </li>
-                        </ul>
+                        <Register />
                     </div>
 
                     <Button variant="contained" className="header-btn">
