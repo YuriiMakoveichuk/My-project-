@@ -117,9 +117,9 @@ const CardPage = ({ id, productsInCart }: Props) => {
     }
 
     const renderMessage = () => {
-        // const refresh = () => {
-        //     window.location.reload()
-        // }
+        const refresh = () => {
+            window.location.reload()
+        }
         return (
             <>
                 <div>
@@ -130,11 +130,7 @@ const CardPage = ({ id, productsInCart }: Props) => {
                         {orderData.address}
                     </div>
                 </div>
-                <Button
-                    className="reviews-btn"
-                    type="submit"
-                    //  onClick={refresh}
-                >
+                <Button className="reviews-btn" type="submit" onClick={refresh}>
                     <NavLink to={'/shop'}>Go to Shop</NavLink>
                 </Button>
             </>
